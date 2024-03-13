@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartão Interativo</title>
+</head>
+<body>
+
+
+    <main>
+        <div class="right-bg">
+
+        </div>
+
+        <div id="card">
+            <div class="card-front">
+                <img src="images/bg-card-front.png">
+
+                <div class="card-number">
+                    <h1 id="card-number">9591 6489 6389 1011</h1>
+                </div>
+                <div class="card-info">
+                    <p id="nome">Nome da Pessoa</p>
+                    <p id="data">10/25</p>
+                </div>
+            </div>
+
+            <div class="card-back">
+                <img src="images/bg-card-back.png">
+                <p id="verso">000</p>
+            </div>
+        </div>
+
+        <div id="user-form">
+            <div class="name-user">
+                <p>Nome do Cartão:</p>
+                <input type="text" placeholder="Digite o nome que está no cartão" id="cartaoNome">
+            </div>
+            <div class="number-card">
+                <p>Número do Cartão:</p>
+                <input type="text" inputmode="numeric" placeholder="Digite o nome que está no cartão" id="card-number-input" maxlength="19">
+            </div>
+            <div class="card-date">
+                <p>Expiração Cartão:</p>
+                <div class="inputs">
+                    <input type="text" inputmode="numeric" placeholder="Mês" id="mes">
+                    <input type="text" inputmode="numeric" placeholder="Ano" id="ano">
+                </div>
+
+                <div class="cvc">
+                    <p>CVC:</p>
+                    <input type="text" inputmode="numeric" placeholder="CVC do cartão" id="cvc">
+                </div>
+                <input type="submit" value="Confirmar" id="confirm">
+            </div>      
+        </div>
+
+    </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
