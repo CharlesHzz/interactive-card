@@ -32,7 +32,7 @@ confirmButton.addEventListener('click', ()=> {
     let dadoCvc = cvc.value
 
     if(dadoMes > 12){
-        alert('coloque um mes real otario')
+        alert('Por favor, insira um número real!')
     }
 
 
